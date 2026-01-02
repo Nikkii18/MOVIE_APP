@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My List - Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo" class="logo">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">New & Popular</a></li>
+                    <li><a href="mylist.html">My List</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <input type="text" placeholder="Search" class="search-bar" id="search-bar">
+                <a href="login.html" class="signin-btn">Sign In</a>
+                <div class="profile">
+                    <img src="https://via.placeholder.com/32x32?text=U" alt="Profile" class="profile-img">
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+        <h1 class="hero-title">My List</h1>
+        <p class="hero-description">Your favorite movies, all in one place.</p>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <section class="movie-row">
+        <h2 class="row-title">My List</h2>
+        <div class="carousel" id="my-list-carousel">
+        </div>
+    </section>
+
+    <div class="modal" id="movie-modal">
+    <div class="modal-content">
+        <span class="close-btn" id="close-modal">&times;</span>
+        <img id="modal-poster" src="" alt="">
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <iframe id="movie-iframe" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="#">FAQ</a>
+            <a href="#">Help Center</a>
+            <a href="#">Account</a>
+            <a href="#">Media Center</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Jobs</a>
+            <a href="#">Redeem Gift Cards</a>
+            <a href="#">Buy Gift Cards</a>
+            <a href="#">Ways to Watch</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy</a>
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Corporate Information</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Speed Test</a>
+            <a href="#">Legal Notices</a>
+            <a href="#">Only on Netflix</a>
+        </div>
+        <p>&copy; 2023 Netflix Clone. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
